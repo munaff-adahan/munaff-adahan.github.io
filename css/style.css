@@ -108,7 +108,7 @@ header.site-header {
   font-weight: bold;
 }
 
-.btn.primary {
+.btn_a.primary {
   background-color: #3498db;
   color: #fff;
 }
@@ -272,3 +272,76 @@ footer.site-footer {
     gap: 15px;
   }
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  /* Adjust project section layout */
+  .project {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  /* Adjust font sizes */
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .project p {
+    font-size: 1rem;
+  }
+
+  /* Stack the project details and tech stack vertically */
+  .project-details,
+  .tech-stack {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Media query for smaller mobile devices */
+@media (max-width: 480px) {
+  /* Further reduce font sizes */
+  h1,
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .project p {
+    font-size: 0.9rem;
+  }
+
+  /* Adjust margins and padding */
+  .container {
+    padding: 20px;
+  }
+
+  /* Ensure buttons and links are easy to tap */
+  .btn {
+    width: 100%;
+    padding: 15px 0;
+  }
+}
+.btn.primary {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background-color: #2ecc71;
+}
+
+.btn.secondary {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.btn.secondary:hover {
+  background-color: #3498db;
+}
+.content {
+    overflow-x: auto;
