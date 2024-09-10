@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuwan Munaff | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="backgroundCanvas"></canvas>
+    <header class="site-header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="about-section">
+            <div class="about-content">
+                <img src="images/me.png" alt="Tuwan Munaff" id="profile-image">
+                <div class="text-content">
+                    <h1 id="typing-text">Hi, I'm Tuwan Munaff</h1>
+                    <p id="about-text">I am a Full Stack Developer specializing in web and mobile application
+                        development. Check out my projects below or download my resume.</p>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="projects.html" class="btn primary">View My Projects</a>
+                <a href="resume.html" class="btn secondary">Download My Resume</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2024 Tuwan Munaff. All rights reserved.</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+/* Reset default browser styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header.site-header {
+  background-color: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Navbar */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar ul li a:hover {
+  color: #2ecc71;
+}
+
+/* Main content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* About Section */
+.about-section h1 {
+  font-size: 3rem;
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+#about-text {
+  font-size: 1.2em;
+  color: #666;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#profile-image {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttons a {
+  margin: 10px;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.btn.primary {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background-color: #2ecc71;
+}
+
+.btn.secondary {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.btn.secondary:hover {
+  background-color: #3498db;
+}
+
+/* Footer */
+footer.site-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Project Section */
+.projects-section {
+  margin-bottom: 50px;
+}
+
+.project {
+  margin-bottom: 30px;
+}
+
+.project h2 {
+  color: #2c3e50;
+  font-size: 1.8rem;
+}
+
+.project p {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+/* Auto-scrolling tech stack */
+.tech-stack-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 20px 0;
+  padding: 10px 0;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.tech-stack-scroll {
+  display: inline-block;
+  animation: scroll-left 50s linear infinite;
+}
+
+.tech-logo {
+  width: 80px;
+  height: auto;
+  margin: 0 15px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Typing animation */
+#typing-text {
+  font-size: 2em;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid rgba(0, 150, 255, 0.7);
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgba(0, 150, 255, 0.7);
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive media queries */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons a {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 10px;
+  }
+
+  .tech-stack-scroll img {
+    width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
